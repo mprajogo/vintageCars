@@ -4,31 +4,64 @@
  padding: 0;
 }
 
+header{
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+nav{
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+#logo{
+    max-width: 10%;
+}
 body{
     font-family: Montserrat;
 }
 
 h1{
-    background-color: rgb(255, 255, 255);
     text-align: center;
+}
 
+.jumbotron{
+    background: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 h2{
-    font-size: 3.5rem;
+    font-size: 3.5em;
+    font-weight: lighter;
 }
 
-section{
-    margin-top: 5px;
+#cars h2{
+    color: white;
+    font-weight: lighter;
+}
+
+.row{
+    margin: 0px !important;
 }
 
 ul{
+
     text-align: right;
     padding: 5px;
 }
 li{
     display: inline-block;
     text-align: right;
+    color: black !important;
+}
+
+li:hover{
+    text-decoration: none;
+    color: white;
+    background-color: pink;
 }
 
 .container-fluid{
@@ -40,6 +73,7 @@ li{
 #cars{
     background-color: rgb(211, 223, 198);
     padding: 40px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -55,6 +89,10 @@ li{
     border-radius: 10px 10px;
     border: none;
     
+}
+
+#enquiries{
+    margin-bottom: 3.5rem;
 }
 
 .col-4{
@@ -84,7 +122,7 @@ li{
 }
 
 button{
-    background-color: rgb(211, 223, 198);
+    background-color: pink;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -92,9 +130,46 @@ button{
     text-decoration: none;
 }
 
+#contact{
+    background-color: rgb(211, 223, 198);
+    padding: 2rem 1rem;
+}
+
 footer{
     text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+p{
+    text-align: center;
+}
+
+.enquiries p{
+    text-align: left;
+}
+
+#logo{
+    display: inline-block !important;
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+#enquiries{
+    padding-left:50px;
+    padding-right: 50px;
+}
+
+#enquiries h2{
+    padding: 10px;
     background-color: pink;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#enquiries p{
+    color: rgb(211, 223, 198);
 }

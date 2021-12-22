@@ -10,19 +10,47 @@
     <link rel="stylesheet" href="styles.css">
     <title>Vintage Cars</title>
   </head>
-  <body>
-    <nav>
-        <ul>
-            <li><a href="#cars">Cars</a></li>
-            <li><a href="#enquiries">Enquiries</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" id="logo"> 
+    </div>
+    <nav class="navbar navbar-expand-sm">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#cars">
+                Cars
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#enquiries">
+                Enquiries
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                Contact
+              </a>
+          </li>
+      </ul>
+  </nav>
+  </header>
 
-    <h1>Vintage Cars For Hire</h1>
-    
+  <body>
+    <br>
+    <br>
+    <br>
+
+    <div class="jumbotron jumbotron-fluid" style="background:transparent !important">
+      <div class="container">
+        <h1 class="display-4">Vintage Cars for Hire</h1>
+        <p class="lead">Your one stop shop for vintage car rentals & event hires</p>
+      </div>
+    </div>
     <div class="container-fluid">
+      
       <section class="" id="cars">
+        
           <h2 id="carsHeading">Our Available Cars</h2>
           <br>
 
@@ -64,61 +92,56 @@
       <br>
 
       <section class="" id="enquiries">
-        <div class="row">
-          <div class="col-4">
-            <h2>Enquiries</h2>
-            <p>Reach out to us to hire the car of your dreams today!</p>
-          </div>
-          
-          <div class="col-8">
-            
-            <form action="mailto:hello@vintagecars.com" id="enquiryForm">
-              <div class="form-group">
-                <label for="fullName">Full Name:</label>
-                <input type="text" class="form-control" id="fullName" name="fullName"><br>
-              </div>
+              <h2>Enquiries</h2>
+              <br>
+              <p>Reach out to us today to hire the car of your dreams!</p>
               
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email"><br>
-              </div>
+              <form action="mailto:hello@vintagecars.com" id="enquiryForm">
+                <div class="form-group">
+                  <label for="fullName">Full Name:</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName"><br>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email"><br>
+                </div>
 
-              <div class="form-group">
-                <label for="carSelection">Choose a car:</label><br>
-                <select form="enquiryForm" class="form-control" id="carSelection" name="carSelection">
-                    <option value="Nissan Be-1">Nissan Be-1</option>
-                    <option value="Nissan S-Cargo">Nissan S-Cargo</option>
-                    <option value="Nissan Figaro">Nissan Figaro</option>
-                    <option value="Nissan Pao">Nissan Pao</option>
-                </select><br>
-              </div>
-              
-              <div class="form-group">
-                <label for="comments">Comments:</label><br>
-                <textarea name="comments" id="comments" cols="91" rows="5"></textarea><br>
-              </div>
+                <div class="form-group">
+                  <label for="carSelection">Choose a car:</label><br>
+                  <select form="enquiryForm" class="form-control" id="carSelection" name="carSelection">
+                      <option value="Nissan Be-1">Nissan Be-1</option>
+                      <option value="Nissan S-Cargo">Nissan S-Cargo</option>
+                      <option value="Nissan Figaro">Nissan Figaro</option>
+                      <option value="Nissan Pao">Nissan Pao</option>
+                  </select><br>
+                </div>
+                
+                <div class="form-group">
+                  <label for="comments">Comments:</label><br>
+                  <textarea name="comments" id="comments" cols="40" rows="5"></textarea><br>
+                </div>
 
-                <button type="submit" form="enquiryForm" value="submit">Submit</button>
-            </form>
-            
-          </div>
-        </div>
+                  <button type="submit" form="enquiryForm" value="submit">Submit</button>
+              </form>
+
       </section>
 
       <section class="" id="contact">
-          <h2>Contact us:</h2>
-          <p></p>
-          <p>Address:</p>
-          <p>42 Wallaby Way, Sydney NSW</p>
-          <p>Phone:</p>
-          <p>02 0456 2334</p>
-          <p>Email</p>
-          <p>hello@vintagecars.com</p>
+          <h2>Contact Us</h2>
+          <p><strong>Address:</strong>
+          <br>42 Wallaby Way, Sydney NSW</p>
+          <p><strong>Phone:</strong>
+          <br>02 0456 2334</p>
+          <p><strong>Email</strong>
+          <br>hello@vintagecars.com</p>
       </section>
     </div>
 
     <footer>
+      
       <p>Copyright Michelle Prajogo | 2021</p>
+      <a href="#top">Back to Top</a>
     </footer>
 
     <!-- Optional JavaScript -->
